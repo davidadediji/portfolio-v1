@@ -6,13 +6,13 @@ module.exports = {
 			fontFamily: {
 				inter: [
 					'Inter',
-					-apple - system,
-					BlinkMacSystemFont,
+					'-apple-system',
+					'BlinkMacSystemFont',
 					'Roboto',
 					'Segoe UI',
-					Helvetica,
-					Arial,
-					sans - serif,
+					'Helvetica',
+					'Arial',
+					'sans-serif',
 				],
 				roboto: ['Roboto Mono', 'monospace'],
 			},
