@@ -4,7 +4,17 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				inter: ['Inter', 'sans-serif'],
+				inter: [
+					'Inter',
+					-apple - system,
+					BlinkMacSystemFont,
+					'Roboto',
+					'Segoe UI',
+					Helvetica,
+					Arial,
+					sans - serif,
+				],
+				roboto: ['Roboto Mono', 'monospace'],
 			},
 		},
 	},

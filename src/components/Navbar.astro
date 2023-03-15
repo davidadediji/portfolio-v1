@@ -1,19 +1,25 @@
 ---
-type Navitems = string[]
-export interface Props{
-    navItems:Navitems;
+type Navitems = {
+	path: string;
+	page: string;
+};
+export interface Props {
+	navItems: Navitems[];
 }
-const {navItems} = Astro.props as Props;
+const { navItems } = Astro.props as Props;
 ---
 
-<nav class="flex justify-between border-b-2 border-b-slate-400 h-[10%] px-32 py-3">
-    <p>
-        davidadediji
-    </p>
-    <ul class="flex gap-5">
-        {navItems.map((item)=>(
-            <li>{item}</li>
-        ))}
-
-    </ul>
+<nav class='flex justify-between items-center border-b-2 border-b-slate-100 px-32 py-3'>
+	<p class=" font-mono text-sm">
+		<a href='/'>[davidadediji]:$ cd ~/home</a>
+	</p>
+	<ul class='flex gap-5 text-sm'>
+		{
+			navItems.map((item) => (
+				<li>
+					<a href={item.path}>{item.page}</a>
+				</li>
+			))
+		}
+	</ul>
 </nav>
