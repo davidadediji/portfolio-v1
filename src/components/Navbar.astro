@@ -1,0 +1,19 @@
+---
+type Navitems = string[]
+export interface Props{
+    navItems:Navitems;
+}
+const {navItems} = Astro.props as Props;
+---
+
+<nav class="flex justify-between border-b-2 border-b-slate-400 h-[10%] px-32 py-3">
+    <p>
+        davidadediji
+    </p>
+    <ul class="flex gap-5">
+        {navItems.map((item)=>(
+            <li>{item}</li>
+        ))}
+
+    </ul>
+</nav>
