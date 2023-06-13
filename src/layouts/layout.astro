@@ -1,14 +1,15 @@
 ---
-import '../styles/global.css'
+import '../styles/global.css';
 import Footer from '../components/Footer.astro';
 import Navbar from '../components/Navbar.astro';
 import { navItems } from '../data/data';
-export interface Props{
+export interface Props {
 	title: string;
 }
 
-const {title} = Astro.props as Props;
+const { title } = Astro.props as Props;
 ---
+
 <html lang='en'>
 	<head>
 		<meta charset='utf-8' />
@@ -17,9 +18,7 @@ const {title} = Astro.props as Props;
 		<meta name='generator' content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="bg-yellow-50 font-inter flex flex-col h-screen"> 
-		<Navbar navItems={navItems}/>
-        <slot/>
-		<Footer/>
-    </body>
+	<body class='h-screen'>
+		<slot />
+	</body>
 </html>

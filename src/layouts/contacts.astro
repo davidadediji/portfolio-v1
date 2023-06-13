@@ -1,0 +1,27 @@
+---
+import { Props } from './layout.astro';
+import Footer from '../components/Footer.astro';
+import { HiOutlineMail } from 'react-icons/hi';
+import { FaLinkedinIn } from 'react-icons/fa';
+import { BsTelephone } from 'react-icons/bs';
+
+const { title } = Astro.props as Props;
+---
+
+<section class='px-14'>
+	<h2>{title}</h2>
+	<p>Get in touch!</p>
+	<div class="flex flex-col gap-2">
+		<a href='' class='flex gap-2 text-center'>
+			<HiOutlineMail className='text-2xl' /> contact@mail.com
+		</a>
+		<a href=''>
+			<FaLinkedinIn className='text-2xl' />
+		</a>
+		<a href=''>
+			<BsTelephone className='text-2xl' />
+		</a>
+	</div>
+
+	<Footer />
+</section>

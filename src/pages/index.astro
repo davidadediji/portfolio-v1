@@ -1,16 +1,18 @@
 ---
 import Button from '../components/Button.astro';
 import Layout from '../layouts/layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Contacts from '../layouts/contacts.astro';
+import Hero from '../layouts/hero.astro';
+import About from '../layouts/about.astro';
+import { navItems } from '../data/data';
 ---
 
-<Layout title='David Adediji | Home'>
-	<main class="flex flex-col items-center pt-[18%] h-[90%] px-32 ">
-		<h1 class="text-5xl pb-3">David Adediji</h1>
-		<p class=" pb-2">Software Enginneer</p>
-		<Button navText="More About Me" backBtn={false}/>
-		<ul>
-
-		</ul>
+<Layout title='David Adeyinka | Home'>
+	<main class="">
+		<Navbar navItems={navItems}/>
+		<Hero title=''/>
+		<About title='About Me'/>
+		<Contacts title='Contacts'/>
 	</main>
 </Layout>
-<!-- Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif -->

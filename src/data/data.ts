@@ -1,18 +1,18 @@
 export const navItems = [
 	{
 		page: 'About',
-        path: '/about'
+		path: '/about',
 	},
 	{
-        page:'Project',
-        path:'/project'
-    },
+		page: 'Services',
+		path: '/project',
+	},
 	{
-        page:'Blog',
-        path:'/blogs'
-    },
-    {
-        page:'Resume',
-        path:'/resume'
-    }
+		page: 'Portfolio',
+		path: '/blogs',
+	},
+	{
+		page: 'Download CV',
+		path: 'davidadeyinka-cv.pdf',
+	},
 ];
