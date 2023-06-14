@@ -8,18 +8,20 @@ const { title } = Astro.props as Props;
 
 <section class='bg-[#7CB9E8]'>
 	<Navbar navItems={navItems} />
-	<section class='px-28 py-24 flex gap-80 justify-between'>
-		<section id='home'>
-			<p class=" font-roboto">Hello there 👋, my name is David Adeyinka</p>
+	<section class='px-28 py-24 flex justify-between'>
+		<section id='home' class='w-[60%] pt-8'>
+			<p class=" font-roboto text-2xl text-[#0039a6]">Hello there 👋, I am</p>
+            <p class="text-5xl font-semibold my-5">David Adeyinka</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa et veniam iure numquam quidem, accusamus tenetur asperiores odit ipsam doloremque maxime provident omnis atque, ullam commodi, eveniet </p>
 		</section>
-		<section>
+		<section class="w-[40%] flex">
 			<Image
 				src='/profile-deyinka.jpeg'
 				width={350}
 				height={450}
 				format='jpeg'
 				alt='descriptive text'
-				class='rounded-xl'
+				class='rounded-xl flex-end'
 			/>
 		</section>
 	</section>
