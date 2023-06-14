@@ -15,7 +15,7 @@ module.exports = {
 					'sans-serif',
 				],
 				roboto: ['Roboto Mono', 'monospace'],
-				sora: ['Sora', sans-serif],
+				sora: ['Sora'],
 			},
 		},
 	},
