@@ -1,15 +1,15 @@
 export const navItems = [
 	{
 		page: 'About',
-		path: '/about',
+		path: '#about',
 	},
 	{
 		page: 'Services',
-		path: '/project',
+		path: '#service',
 	},
 	{
 		page: 'Portfolio',
-		path: '/blogs',
+		path: '#portfolio',
 	},
 	{
 		page: 'Download CV',

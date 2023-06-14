@@ -1,8 +1,22 @@
 ---
 import { Props } from './layout.astro';
+import { Image } from '@astrojs/image/components';
 const { title } = Astro.props as Props;
 ---
 
-<section class="px-14">
-    <h2>{title}</h2>
+<section id='about' class='px-28'>
+	<section>
+		<!-- <Image src={''} width={300} height={300} alt=''/> -->
+	</section>
+	<section>
+		<h2>{title}</h2>
+		<p>
+			A seasoned Project Professional & Scrum master adept at leading co-located
+			& remote teams on daunting technology projects to deliver laudable
+			results. I have leveraged my knowledge of agile & waterfall methodologies
+			garnered in 3 years to deliver technology solutions that achieved key
+			business objectives for many startups across Finance, Manufacturing,
+			Edtech and Blockchain sectors.
+		</p>
+	</section>
 </section>

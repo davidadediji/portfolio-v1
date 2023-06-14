@@ -1,13 +1,26 @@
 ---
-import { Props } from "./layout.astro";
-const {title} = Astro.props as Props
+import { Props } from './layout.astro';
+import { Image } from '@astrojs/image/components';
+import { navItems } from '../data/data';
+import Navbar from '../components/Navbar.astro';
+const { title } = Astro.props as Props;
 ---
 
-<section class="px-14 py-24">
-    <section>
-        <p>Hello there, my name is David Adeyinka</p>
-    </section>
-    <section>
-        <img src="" alt="">
-    </section>
+<section class='bg-[#7CB9E8]'>
+	<Navbar navItems={navItems} />
+	<section class='px-28 py-24 flex gap-80 justify-between'>
+		<section id='home'>
+			<p class=" font-roboto">Hello there 👋, my name is David Adeyinka</p>
+		</section>
+		<section>
+			<Image
+				src='/profile-deyinka.jpeg'
+				width={350}
+				height={450}
+				format='jpeg'
+				alt='descriptive text'
+				class='rounded-xl'
+			/>
+		</section>
+	</section>
 </section>

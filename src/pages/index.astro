@@ -5,14 +5,18 @@ import Navbar from '../components/Navbar.astro';
 import Contacts from '../layouts/contacts.astro';
 import Hero from '../layouts/hero.astro';
 import About from '../layouts/about.astro';
+import Services from '../layouts/services.astro'
+import Portfolio from '../layouts/portfolio.astro'
 import { navItems } from '../data/data';
 ---
 
 <Layout title='David Adeyinka | Home'>
 	<main class="">
-		<Navbar navItems={navItems}/>
+		
 		<Hero title=''/>
 		<About title='About Me'/>
+		<Services/>
+		<Portfolio/>
 		<Contacts title='Contacts'/>
 	</main>
 </Layout>

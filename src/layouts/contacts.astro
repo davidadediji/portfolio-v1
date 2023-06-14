@@ -8,19 +8,25 @@ import { BsTelephone } from 'react-icons/bs/index.js';
 const { title } = Astro.props as Props;
 ---
 
-<section class='px-14'>
-	<h2>{title}</h2>
-	<p>Get in touch!</p>
-	<div class="flex flex-col gap-2">
-		<a href='' class='flex gap-2 text-center'>
-			<HiOutlineMail className='text-2xl' /> contact@mail.com
-		</a>
-		<a href=''>
-			<FaLinkedinIn className='text-2xl' />
-		</a>
-		<a href=''>
-			<BsTelephone className='text-2xl' />
-		</a>
+<section id='contact' class='px-28 bg-[#7CB9E8] pt-16'>
+	<div class=" mb-10">
+		<h2>{title}</h2>
+		<p>Get in touch!</p>
+		<div class='flex flex-col gap-2 w-[25%]'>
+			<a href='mailto:deyinkaonas@gmail.com' class='flex gap-2 text-center'>
+				<HiOutlineMail className='text-2xl' />deyinkaonas@gmail.com
+			</a>
+
+			<a
+				href='https://www.linkedin.com/in/adeyinkaonasanya'
+				class='flex gap-2 text-center'
+			>
+				<FaLinkedinIn className='text-2xl' /> in/adeyinkaonasanya
+			</a>
+			<a href='tel:+2348146260401' class='flex gap-2 text-center'>
+				<BsTelephone className='text-2xl' />+2348146260401
+			</a>
+		</div>
 	</div>
 
 	<Footer />
