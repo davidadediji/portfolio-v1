@@ -6,23 +6,26 @@ import Navbar from '../components/Navbar.astro';
 const { title } = Astro.props as Props;
 ---
 
-<section class='bg-[#7CB9E8]'>
-	<Navbar navItems={navItems} />
-	<section class='px-28 py-24 flex justify-between'>
-		<section id='home' class='w-[60%] pt-8'>
-			<p class=" font-roboto text-2xl text-[#0039a6]">Hello there 👋, I am</p>
-            <p class="text-5xl font-semibold my-5">David Adeyinka</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa et veniam iure numquam quidem, accusamus tenetur asperiores odit ipsam doloremque maxime provident omnis atque, ullam commodi, eveniet </p>
+<section class='bg-gray-900 text-white'>
+	<section class='flex justify-between mx-auto max-w-5xl py-24'>
+		<section id='home' class='w-[50%] pt-8'>
+			<p class='font-roboto text-2xl text-[#fff]'>Hello there 👋, I am</p>
+			<p class='text-5xl font-semibold my-5'>I am Adeyinka David</p>
+			<p>
+				An Experienced Project Manager, recognized for driving sales growth and leading innovative product development in Blockchain and Edtech industry.
+			</p>
 		</section>
-		<section class="w-[40%] flex">
-			<Image
-				src='/profile-deyinka.jpeg'
-				width={350}
-				height={450}
-				format='jpeg'
-				alt='descriptive text'
-				class='rounded-xl flex-end'
-			/>
+		<section class='w-[50%] flex justify-center'>
+			<div>
+				<Image
+					src='/profile-deyinka.jpeg'
+					width={350}
+					height={450}
+					format='jpeg'
+					alt='descriptive text'
+					class='rounded-xl flex-end'
+				/>
+			</div>
 		</section>
 	</section>
 </section>

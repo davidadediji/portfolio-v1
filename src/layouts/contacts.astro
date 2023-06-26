@@ -8,26 +8,26 @@ import { BsTelephone } from 'react-icons/bs/index.js';
 const { title } = Astro.props as Props;
 ---
 
-<section id='contact' class='px-28 bg-[#7CB9E8] pt-16'>
-	<div class=" mb-10">
-		<h2 class="font-semibold text-3xl text-[#0039a6] py-5">{title}</h2>
-		<p class='font-bold text-2xl pb-5'>Get in touch</p>
-		<div class='flex flex-col gap-2 w-[25%]'>
-			<a href='mailto:deyinkaonas@gmail.com' class='flex gap-2 text-center'>
-				<HiOutlineMail className='text-2xl' />deyinkaonas@gmail.com
-			</a>
+<section >
+	<section id='contact' class='px-28 bg-gray-900 pt-16 pb-10'>
+		<div class='mx-auto max-w-5xl'>
+			<h2 class='font-semibold text-3xl text-[#0039a6] py-5'>{title}</h2>
+			<p class='font-bold text-2xl pb-5 text-[#fff]'>Get in touch</p>
+			<div class='flex flex-col gap-2 w-[25%] text-[#fff]'>
+				<a href='mailto:deyinkaonas@gmail.com' class='flex gap-2 text-center'>
+					<HiOutlineMail className='text-2xl' />deyinkaonas@gmail.com
+				</a>
 
-			<a
-				href='https://www.linkedin.com/in/adeyinkaonasanya'
-				class='flex gap-2 text-center'
-			>
-				<FaLinkedinIn className='text-2xl' /> in/adeyinkaonasanya
-			</a>
-			<a href='tel:+2348146260401' class='flex gap-2 text-center'>
-				<BsTelephone className='text-2xl' />+2348146260401
-			</a>
+				<a
+					href='https://www.linkedin.com/in/adeyinkaonasanya'
+					class='flex gap-2 text-center'
+				>
+					<FaLinkedinIn className='text-2xl' /> in/adeyinkaonasanya
+				</a>
+				<a href='tel:+2348146260401' class='flex gap-2 text-center'>
+					<BsTelephone className='text-2xl' />+2348146260401
+				</a>
+			</div>
 		</div>
-	</div>
-
-	<Footer />
+	</section>
 </section>

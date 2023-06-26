@@ -4,19 +4,31 @@ import { Image } from '@astrojs/image/components';
 const { title } = Astro.props as Props;
 ---
 
-<section id='about' class='px-28 flex py-14'>
-	<section class="w-[50%]">
-		<Image src="/project-management.jpeg" format='jpeg' width={500} height={420} alt='' class='rounded-3xl'/>
-	</section>
-	<section class="w-[50%]">
-		<h2 class=" font-semibold text-3xl text-[#0039a6] py-5">{title}</h2>
-		<p>
-			A seasoned Project Professional & Scrum master adept at leading co-located
-			& remote teams on daunting technology projects to deliver laudable
-			results. I have leveraged my knowledge of agile & waterfall methodologies
-			garnered in 3 years to deliver technology solutions that achieved key
-			business objectives for many startups across Finance, Manufacturing,
-			Edtech and Blockchain sectors.
-		</p>
+<section class="">
+	<section id='about' class='px-28 flex py-14 max-w-7xl mx-auto'>
+		<section class='w-[50%]'>
+			<Image
+				src='/project-management.jpeg'
+				format='jpeg'
+				width={500}
+				height={420}
+				alt=''
+				class='rounded-3xl'
+			/>
+		</section>
+		<section class='w-[50%]'>
+			<h2 class='font-semibold text-3xl text-[#0039a6] py-5'>{title}</h2>
+			<p class="text-justify leading-7">
+				I am a highly experienced Project Manager and skilled Scrum Master,
+				proficient in guiding both on-site and distributed teams to accomplish
+				complex technology projects with remarkable outcomes. Over the course of
+				three years, I have honed my expertise in agile and waterfall
+				methodologies, enabling me to deliver cutting-edge technology solutions
+				that effectively address critical business objectives. Throughout my
+				career, I have collaborated with numerous startups across a wide range
+				of industries, including Finance, Manufacturing, EdTech, and Blockchain,
+				consistently delivering exceptional results.
+			</p>
+		</section>
 	</section>
 </section>
