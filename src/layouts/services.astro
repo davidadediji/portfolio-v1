@@ -12,7 +12,7 @@ import { cardDetails } from "../data/data";
 			expectations at both the departmental and project levels.
 		</p>
 		<p>Here's what I can do for your Organisation</p>
-      <ul>
+      <ul class="grid lg:grid-cols-2 gap-4 max-w-3xl mx-auto mt-8">
          {cardDetails.map((card)=>(
             <Card title={card.title} summary={card.summary} imageurl={card.imageUrl}/>
          ))}

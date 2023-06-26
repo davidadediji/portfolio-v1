@@ -42,15 +42,23 @@ export const cardDetails = [
 
 export const companies = [
 	{
-		imageUrl: 'About',
-		name: '#about',
+		imageUrl: '/assets/icons/aya-holdings.jpeg',
+		name: 'Aya Holdings',
 	},
 	{
-		imageUrl: 'About',
-		name: '#about',
+		imageUrl: '/assets/icons/flincap.jpeg',
+		name: 'Flincap',
 	},
 	{
-		imageUrl: 'About',
-		name: '#about',
+		imageUrl: '/assets/icons/stakepro.jpeg',
+		name: 'Stakepro',
 	},
+	{
+		imageUrl: '/assets/icons/bentinit.png',
+		name: 'Bentinit',
+	},
+	{
+		imageUrl: '/assets/icons/berger-paint.png',
+		name: 'Berger Paint',
+	}
 ];
