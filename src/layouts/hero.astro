@@ -7,15 +7,15 @@ const { title } = Astro.props as Props;
 ---
 
 <section class='bg-gray-900 text-white'>
-	<section class='flex justify-between lg:flex-row flex-col mx-auto max-w-5xl py-24'>
-		<section id='home' class='w-[50%] pt-8'>
-			<p class='font-roboto text-2xl text-[#fff]'>Hello there 👋, I am</p>
-			<p class='text-5xl font-semibold my-5'>I am Adeyinka David</p>
-			<p>
+	<section class='flex justify-between lg:flex-row flex-col lg:mx-auto lg:max-w-5xl lg:py-24 py-10 gap-5'>
+		<section id='home' class='lg:w-[50%]'>
+			<p class='font-roboto lg:text-2xl text-lg lg:text-left text-center text-[#fff]'>Hello there 👋, I am</p>
+			<p class='lg:text-5xl text-2xl text-center lg:text-left font-semibold my-5'>Adeyinka David</p>
+			<p class="lg:text-normal text-sm text-center lg:text-left lg:max-w-0 max-w-3xl mx-auto">
 				An Experienced Project Manager, recognized for driving sales growth and leading innovative product development in Blockchain and Edtech industry.
 			</p>
 		</section>
-		<section class='w-[50%] flex justify-center'>
+		<section class='lg:w-[50%] flex justify-center'>
 			<div>
 				<Image
 					src='/profile-deyinka.jpeg'
