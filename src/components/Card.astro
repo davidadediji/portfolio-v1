@@ -1,0 +1,24 @@
+---
+import { Image } from '@astrojs/image/components';
+interface Props{
+    imageurl:string
+    title:string
+    summary:string
+}
+const {imageurl, title, summary} = Astro.props as Props
+---
+
+<div>
+	<div>
+		<Image
+			src='/profile-deyinka.jpeg'
+			width={350}
+			height={450}
+			format='jpeg'
+			alt='descriptive text'
+			class='rounded-xl flex-end'
+		/>
+	</div>
+    <h2>{title}</h2>
+    <p>{summary}</p>
+</div>

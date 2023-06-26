@@ -1,4 +1,6 @@
 ---
+import Card from "../components/Card.astro";
+import { cardDetails } from "../data/data";
 ---
 
 <section class="bg-gray-900">
@@ -10,5 +12,10 @@
 			expectations at both the departmental and project levels.
 		</p>
 		<p>Here's what I can do for your Organisation</p>
+      <ul>
+         {cardDetails.map((card)=>(
+            <Card title={card.title} summary={card.summary} imageurl={card.imageUrl}/>
+         ))}
+      </ul>
 	</section>
 </section>
