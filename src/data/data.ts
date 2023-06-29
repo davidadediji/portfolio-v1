@@ -13,7 +13,7 @@ export const navItems = [
 	},
 	{
 		page: 'Download CV',
-		path: 'davidadeyinka-cv.pdf',
+		path: '/docs/Adeyinka\ Onasanya\ CV.pdf',
 	},
 ];
 
