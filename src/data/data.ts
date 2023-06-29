@@ -19,24 +19,24 @@ export const navItems = [
 
 export const cardDetails = [
 	{
-		imageUrl: 'About',
+		imageUrl: '/assets/icons/briefcase.png',
 		title: 'Product Management',
 		summary:
 			'I help companies build their products in a simple way with their users at heart, as simple products win all the time.',
 	},
 	{
-		imageUrl: 'About',
+		imageUrl: '/assets/icons/handshake.png',
 		title: 'Product Adoption',
 		summary:
 			'I am great at structuring products for adoption in new markets. Why build an awesome product if no one is going to use it?',
 	},
 	{
-		imageUrl: 'About',
+		imageUrl: '/assets/icons/bitcoin.png',
 		title: 'Blockchain and Cryptocurrency',
 		summary: 'Being an early  adopter and promoter of cryptocurrency, my expertise helps companies overcome the challenges in the industry',
 	},
 	{
-		imageUrl: 'About',
+		imageUrl: '/assets/icons/folder.png',
 		title: 'Business Developement',
 		summary: 'Got a business development task? Let us talk about it',
 	},
