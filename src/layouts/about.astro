@@ -7,10 +7,10 @@ const { title } = Astro.props as Props;
 <section class='bg-white'>
 	<section
 		id='about'
-		class='flex lg:flex-row flex-col py-14 gap-5 lg:max-w-5xl lg:mx-auto '
+		class='flex lg:flex-row flex-col py-14 gap-5 lg:max-w-5xl lg:mx-auto'
 	>
 		<section class='lg:w-[50%]'>
-			<div class="flex justify-center lg:block">
+			<div class='flex justify-center lg:block'>
 				<Image
 					src='/project-management.jpeg'
 					format='jpeg'
@@ -27,7 +27,9 @@ const { title } = Astro.props as Props;
 			>
 				{title}
 			</h2>
-			<p class='text-justify text-lg lg:text-normal leading-7 max-w-2xl mx-auto px-6 lg:px-0'>
+			<p
+				class='text-justify text-lg lg:text-normal leading-7 max-w-2xl mx-auto px-6 lg:px-0'
+			>
 				I am a highly experienced Project Manager and skilled Scrum Master,
 				proficient in guiding both on-site and distributed teams to accomplish
 				complex technology projects with remarkable outcomes. Over the course of
@@ -37,6 +39,13 @@ const { title } = Astro.props as Props;
 				career, I have collaborated with numerous startups across a wide range
 				of industries, including Finance, Manufacturing, EdTech, and Blockchain,
 				consistently delivering exceptional results.
+			</p>
+			<p class="mt-6 ml-6 lg:ml-0">
+				<a
+					href='davidadeyinka-cv.pdf'
+					class='hover:bg-[#fff] hover:text-[#0039a6] text-white rounded-sm px-3 py-2 text-center bg-[#0039a6]'
+					target='_blank'>Download CV</a
+				>
 			</p>
 		</section>
 	</section>

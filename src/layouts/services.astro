@@ -1,21 +1,44 @@
 ---
-import Card from "../components/Card.astro";
-import { cardDetails } from "../data/data";
+import Card from '../components/Card.astro';
+import { cardDetails } from '../data/data';
 ---
 
-<section class="bg-gray-900">
-	<section class='max-w-5xl mx-auto text-[#fff]' id='services'>
-		<h2 class='font-semibold text-3xl text-[#0039a6] py-5'>Services</h2>
-		<p>
-			I am known for my exceptional problem-solving skills and a keen ability to
-			mitigate risks and manage product requirements. I consistently surpass
-			expectations at both the departmental and project levels.
-		</p>
-		<p>Here's what I can do for your Organisation</p>
-      <ul class="grid lg:grid-cols-2 gap-4 max-w-3xl mx-auto mt-8">
-         {cardDetails.map((card)=>(
-            <Card title={card.title} summary={card.summary} imageurl={card.imageUrl}/>
-         ))}
-      </ul>
+<section class='bg-gray-900'>
+	<section class='max-w-5xl mx-auto text-[#fff]' id='service'>
+		<h2
+			class='font-semibold text-3xl text-[#0039a6] py-5 lg:text-left text-center'
+		>
+			Services
+		</h2>
+		<section class="grid lg:grid-cols-2 gap-4">
+			<p
+				class='text-justify text-lg lg:text-normal leading-7 max-w-2xl mx-auto px-6 lg:px-0'
+			>
+				I am known for my exceptional problem-solving skills and a keen ability
+				to mitigate risks and manage product requirements. I consistently
+				surpass expectations at both the departmental and project levels.
+			</p>
+			<div class="w-[full] mx-auto">
+				<p class="font-bold mb-3 text-lg">My Values</p>
+				<ul class=" list-disc flex lg:flex-col flex-row gap-6 lg:gap-3">
+					<li>Commitment</li>
+					<li>Honesty</li>
+					<li>Strong Work Ethic</li>
+					<li>Positive Attitude</li>
+				</ul>
+			</div>
+		</section>
+
+		<ul class='grid lg:grid-cols-2 gap-4 max-w-3xl mx-auto mt-8'>
+			{
+				cardDetails.map((card) => (
+					<Card
+						title={card.title}
+						summary={card.summary}
+						imageurl={card.imageUrl}
+					/>
+				))
+			}
+		</ul>
 	</section>
 </section>
