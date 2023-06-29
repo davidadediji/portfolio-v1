@@ -16,6 +16,7 @@ module.exports = {
 				],
 				roboto: ['Roboto Mono', 'monospace'],
 				sora: ['Sora'],
+				satoshi: ['Satoshi', 'sans-serif']
 			},
 		},
 	},

@@ -17,7 +17,7 @@ const { navItems } = Astro.props as Props;
 		<ul class='flex gap-5 text-sm'>
 			{
 				navItems.map((item) => (
-					<li>
+					<li class="transition border-b border-transparent hover:border-black hover:text-underline">
 						<a href={item.path}>{item.page}</a>
 					</li>
 				))
