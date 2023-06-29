@@ -20,23 +20,25 @@ export const navItems = [
 export const cardDetails = [
 	{
 		imageUrl: 'About',
-		title: '#about',
-		summary: '',
+		title: 'Product Management',
+		summary:
+			'I help companies build their products in a simple way with their users at heart, as simple products win all the time.',
 	},
 	{
 		imageUrl: 'About',
-		title: '#about',
-		summary: '',
+		title: 'Product Adoption',
+		summary:
+			'I am great at structuring products for adoption in new markets. Why build an awesome product if no one is going to use it?',
 	},
 	{
 		imageUrl: 'About',
-		title: '#about',
-		summary: '',
+		title: 'Blockchain and Cryptocurrency',
+		summary: 'Being an early  adopter and promoter of cryptocurrency, my expertise helps companies overcome the challenges in the industry',
 	},
 	{
 		imageUrl: 'About',
-		title: '#about',
-		summary: '',
+		title: 'Business Developement',
+		summary: 'Got a business development task? Let us talk about it',
 	},
 ];
 
@@ -60,5 +62,5 @@ export const companies = [
 	{
 		imageUrl: '/assets/icons/berger-paint.png',
 		name: 'Berger Paint',
-	}
+	},
 ];

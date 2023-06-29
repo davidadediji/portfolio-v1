@@ -4,9 +4,9 @@ import { cardDetails } from '../data/data';
 ---
 
 <section class='bg-gray-900'>
-	<section class='max-w-5xl mx-auto text-[#fff]' id='service'>
+	<section class='max-w-5xl mx-auto text-[#fff] py-5' id='service'>
 		<h2
-			class='font-semibold text-3xl text-[#0039a6] py-5 lg:text-left text-center'
+			class='font-semibold text-3xl text-[#0039a6] lg:text-left text-center pb-5'
 		>
 			Services
 		</h2>
@@ -20,7 +20,7 @@ import { cardDetails } from '../data/data';
 			</p>
 			<div class="w-[full] mx-auto">
 				<p class="font-bold mb-3 text-lg">My Values</p>
-				<ul class=" list-disc flex lg:flex-col flex-row gap-6 lg:gap-3 text-sm">
+				<ul class=" list-disc grid grid-cols-2 gap-x-7">
 					<li>Commitment</li>
 					<li>Honesty</li>
 					<li>Strong Work Ethic</li>
@@ -29,7 +29,7 @@ import { cardDetails } from '../data/data';
 			</div>
 		</section>
 
-		<ul class='grid lg:grid-cols-2 gap-4 max-w-3xl mx-auto mt-8'>
+		<ul class='grid lg:grid-cols-2 gap-4 max-w-3xl lg:mx-auto mx-10 mt-8'>
 			{
 				cardDetails.map((card) => (
 					<Card

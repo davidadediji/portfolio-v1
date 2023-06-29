@@ -8,12 +8,12 @@ interface Props{
 const {imageurl, title, summary} = Astro.props as Props
 ---
 
-<div class="border border-gray-100 rounded-lg bg-[#fff] text-black">
+<div class="border border-gray-100 rounded-lg bg-gray-300 text-black">
 	<div>
 		<Image
-			src='/profile-deyinka.jpeg'
-			width={350}
-			height={450}
+			src={imageurl}
+			width={100}
+			height={150}
 			format='jpeg'
 			alt='descriptive text'
 			class='rounded-xl flex-end'
